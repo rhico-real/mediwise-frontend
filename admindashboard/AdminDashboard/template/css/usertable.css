@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 50vh;
+    display: grid;
+    place-items: center;
+}
+table{
+    width: 600;
+    box-shadow: -1px 12px 12px -6px rgba(0,0,0,0.5);
+    top: 100%;
+}
+table, td, th{
+    padding: 5px;
+    border: 12px;
+    border-collapse: collapse;
+    text-align: center;
+}
+td{
+    font-size: 15px;
+}
+th{
+    background-color: orange;
+}

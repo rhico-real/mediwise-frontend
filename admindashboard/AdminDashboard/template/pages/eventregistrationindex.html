@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Events Registration</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel='stylesheet' href='https://fonts.gstatic.com'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap'><link rel="stylesheet" href="/AdminDashboard/template/css/eventregistration.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Simple Registration Form -->
+  <section class="registration-form">
+    <h3>Add Event</h3>
+    <hr />
+    <!-- Form Wrapper -->
+    <form name="registration-form" id="registrationForm" method="POST" action="" role="form">
+      <div class="form-floating">
+        <input type="text" name="firstName" class="form-control" id="firstName" placeholder="Event Name" />
+        <label for="firstName">Event Name</label>
+      </div>
+      <div class="form-floating">
+        <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Date" />
+        <label for="lastName">Date</label>
+      </div>
+      <div class="form-floating">
+        <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Barangay" />
+        <label for="lastName">Barangay</label>
+      </div>
+      <div class="form-floating">
+        <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Location" />
+        <label for="lastName">Location</label>
+      </div>
+
+      <div class="form-button-set">
+        <button type="submit" class="c-button c-button--navy">Add</button>
+        <button type="submit">Close</button>
+      </div>
+    </form>
+    <!--/ Form Wrapper -->
+  </section>
+  <!--/ Simple Registration Form -->
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js'></script><script  src="/AdminDashboard/template/js/eventregistration.js"></script>
+
+</body>
+</html>

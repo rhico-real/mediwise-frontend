@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Patients Mesiwise</title>
+  <link rel="stylesheet" href="css/patientcss.css>
+  
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<body>
+    <div class="container">            
+        
+            <div class="row" style="padding-bottom: 10px;">
+                <div class="col-md-6" style="background-color: #f0f0f0; padding: 5px 5px;">
+
+ 
+                </div>
+            </div>
+      <div class="row" style="padding-top: 10px;">
+            <div class="col-md-12" style="padding: 5px 5px; background-color: #d0d0d0;">
+                <table class="table table-striped table-bordered" id="appoint_table_ajax" style="background-color: #fff; margin-bottom: 0px;">
+                    <thead>
+                       <tr>
+                          <th class="uppercase bold" colspan="7" style="height: 30px !important; background-color: lightgreen !important;">Patient Records</th>
+                       </tr>
+                        <tr>
+                            <th>Num.</th>
+                            <th>Name</th>
+                            <th>Contact Num</th>
+                            <th>Brgy</th>
+                            <th>Disease</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="person_appoint_table">
+                            <tr data-cari="user1">
+                                <td class="bold uppercase" style="text-align: center; vertical-align: middle; background-color: white; color:black; width:209px !important;">User 1</td>
+                                <td style="width:209px !important;" data-id="1" class="app_td detail1"></td>
+                                <td style="width:209px !important;" data-id="2" class="app_td detail2"></td>
+                                <td style="width:209px !important;" data-id="3" class="app_td detail3"></td>
+                                <td style="width:209px !important;" data-id="4" class="app_td detail4"></td>
+                                <td style="width:209px !important;" data-id="5" class="app_td detail5"></td>
+                                <td style="width:209px !important;" data-id="6" class="app_td detail6"></td>
+                            </tr>
+                             <tr data-cari="user1">
+                                <td class="bold uppercase" style="text-align: center; vertical-align: middle; background-color: white; color:black; color:black; color:black;">User 2</td>
+                                <td style="width:209px !important;" data-id="7" class="app_td detail7"></td>
+                                <td style="width:209px !important;" data-id="8" class="app_td detail8"></td>
+                                <td style="width:209px !important;" data-id="9" class="app_td detail9"></td>
+                                <td style="width:209px !important;" data-id="10" class="app_td detail10"></td>
+                                <td style="width:209px !important;" data-id="11" class="app_td detail11"></td>
+                                <td style="width:209px !important;" data-id="12" class="app_td detail12"></td>
+                            </tr>
+                             <tr data-cari="user1">
+                                <td class="bold uppercase" style="text-align: center; vertical-align: middle; background-color: white; color:black;">User 3</td>
+                                <td style="width:209px !important;" data-id="13" class="app_td detail13"></td>
+                                <td style="width:209px !important;" data-id="14" class="app_td detail4"></td>
+                                <td style="width:209px !important;" data-id="15" class="app_td detail5"></td>
+                                <td style="width:209px !important;" data-id="16" class="app_td detail16"></td>
+                                <td style="width:209px !important;" data-id="17" class="app_td detail17"></td>
+                                <td style="width:209px !important;" data-id="18" class="app_td detail18"></td>
+                            </tr>
+                             <tr data-cari="user1">
+                                <td class="bold uppercase" style="text-align: center; vertical-align: middle; background-color:white; color:black;">User 4</td>
+                                <td style="width:209px !important;" data-id="19" class="app_td detail19"></td>
+                                <td style="width:209px !important;" data-id="20" class="app_td detail20"></td>
+                                <td style="width:209px !important;" data-id="21" class="app_td detail21"></td>
+                                <td style="width:209px !important;" data-id="22" class="app_td detail22"></td>
+                                <td style="width:209px !important;" data-id="23" class="app_td detail23"></td>
+                                <td style="width:209px !important;" data-id="24" class="app_td detail24"></td>
+                            </tr>
+                             <tr data-cari="user1">
+                                <td class="bold uppercase" style="text-align: center; vertical-align: middle; background-color: white; color:black;">User 5</td>
+                                 <td style="width:209px !important;" data-id="25" class="app_td detail25"></td>
+                                <td style="width:209px !important;" data-id="26"  class="app_td detail26"></td>
+                                <td style="width:209px !important;" data-id="27"  class="app_td detail27"></td>
+                                <td style="width:209px !important;" data-id="28"  class="app_td detail28"></td>
+                                <td style="width:209px !important;" data-id="29"  class="app_td detail29"></td>
+                                <td style="width:209px !important;" data-id="30"  class="app_td detail30"></td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- <div class="modal fade" id="appoinment_add_modal" tabindex="-1" role="basic" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: #ff7300; color:#fff;">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                        <h4 class="modal-title" ><b>Add Appointment</b></h4>
+                    </div>
+                    <div class="modal-body" style="background-color: #f0f0f0;" >
+                        <div class="row" >
+                            <div class="col-md-12" id="appoinment_add_form">
+                                <form id="appointment_add_form">
+                                    <input type="hidden" name="data" class="hide" id="data_id">
+                                    <div class="col-md-12" style="padding-top: 10px;">
+                                        <label for="">Person Name</label>
+                                        <input type="text" name="person_name" id="person_name" class="form-control">
+                                    </div>
+                                    <div class="col-md-12" style="padding-top: 10px;">
+                                        <label for="">Email</label>
+                                        <input type="email" name="mail" id="mail" class="form-control">
+                                    </div>
+                                    <div class="col-md-12" style="padding-top: 10px;">
+                                        <label for="">Telephone</label>
+                                        <input type="text" name="mobile" id="mobile" class="form-control">
+                                    </div>
+                                    <div class="col-md-12" style="padding-top: 10px;">
+                                        <label for="">Description</label>
+                                        <textarea name="description" id="description" cols="" rows="5" class="form-control"></textarea>    
+                                    </div>
+                                    <div class="col-md-12" style="padding-top: 10px; text-align: right;">
+                                        <a onclick="$.appointment_form();" class="btn btn-success">done</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div> -->
+    </div>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
