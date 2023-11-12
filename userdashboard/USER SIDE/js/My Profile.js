@@ -59,14 +59,54 @@ var receivedData = JSON.parse(jsonString);
 console.log(receivedData);
 console.log(receivedData['user']['first_name']);
 
-var receivedName = receivedData['user']['first_name'] + " " + receivedData['user']['last_name'];
+var receivedFirstName = receivedData['user']['first_name'];
+var receivedLastName = receivedData['user']['last_name'];
 var receivedAddress = receivedData['user']['address'];
 var receivedPhone = receivedData['user']['phone_number'];
 
-document.getElementById('name').value = receivedName;
+document.getElementById('first_name').value = receivedFirstName;
+document.getElementById('last_name').value = receivedLastName;
 document.getElementById('address').value = receivedAddress;
 document.getElementById('phone').value = receivedPhone;
 
 var receivedEmail = receivedData['user']['email'];
 
 document.getElementById('email').value = receivedEmail;
+
+document.getElementById('updateProfileButton').addEventListener('click', function(event) {
+  event.preventDefault();
+
+  var firstName = document.getElementById('first_name').value;
+  var lastName = document.getElementById('last_name').value;
+  var address = document.getElementById('address').value;
+  var phone = document.getElementById('phone').value;
+  var email = document.getElementById('email').value;
+
+  var data = {
+    first_name: firstName,
+    last_name: lastName,
+    address: address,
+    phone_number: phone,
+    email: email,
+  }
+
+  fetch('https://phplaravel-1160073-4043249.cloudwaysapps.com/api/updateUser', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Handle the API response data here
+        console.log(data);
+
+        // Redirect to login.php or perform other actions as needed
+        alert("Update User Successful.");
+    })
+    .catch(error => {
+        // Handle errors here
+        console.error('Error:', error);
+    });
+});

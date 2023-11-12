@@ -36,18 +36,20 @@
 <div class="tr">
 
 
-	<label class="label" for="input">NAME</label>
-	<input class="input" type="text" id="input">
+	<label class="label" for="input">FIRST NAME</label>
+	<input class="input" type="text" id="first_name">
+  <label class="label" for="input">LAST NAME</label>
+	<input class="input" type="text" id="last_name">
 	
 	
 		<label class="label" for="input">ADDRESS<div id="texte"></div>
 		  
       
 		</label>	
-	<input class="input texte" type="text" id="input">
+	<input class="input texte" type="text" id="address">
   
   	<label class="label" for="input">CONTACT</label>	
-	<input class="input" type="text" id="input">
+	<input class="input" type="text" id="phone">
   </div>
   <br>
   
@@ -78,7 +80,7 @@
   
       </div>
   
-  <button>Update profile</button>
+  <button id="updateProfileButton">Update profile</button>
       
       </div>
        

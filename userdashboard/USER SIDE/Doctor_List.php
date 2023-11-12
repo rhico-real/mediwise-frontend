@@ -31,31 +31,47 @@
 <div class="container">
     <h2>Doctors List</h2>
     <table class="table table-fluid" id="myTable">
-    <thead>
-    <tr><th>Name</th><th>Specialization</th><th>Barangay</th></tr>
-    </thead>
-    <tbody>
-    <tr><td>Dr. Javier Rodriquez</td><td>General Practitioner</td><td>178</td></tr>
-    <tr><td>Dr. Earl Lasse</td><td>General Medicine</td><td>175</td></tr>
-    <tr><td>Dr. Eira Gavin</td><td>Prenatal Care Practitioner</td><td>174</td></tr>
-    <tr><td>Dr. Minerva Amit</td><td>General Practitioner</td><td>175</td></tr>
-    <tr><td>Dr. Fatima Villaluna</td><td>General Medicine</td><td>177</td></tr>
-    <tr><td>Dr. Theresa Avila</td><td>Prenatal Care Practitioner</td><td>174</td></tr>
-    <tr><td>Dr. Navin Abia</td><td>General Medicine</td><td>178</td></tr>
-    <tr><td>Dr. Allan Anja</td><td>Prenatal Care Practitioner</td><td>174</td></tr>
-    <tr><td>Dr. Cristi Audo</td><td>General Practitioner</td><td>178</td></tr>
-    <tr><td>Dr. Lloyd Adalbert</td><td>General Medicine</td><td>176</td></tr>
-    <tr><td>Dr. Shawnee Hirune</td><td>Prenatal Care Practitioner</td><td>174</td></tr>
-    <tr><td>Dr. Jody Nicki</td><td>General Practitioner</td><td>178</td></tr>
-
-    </tbody>
+      <thead>
+          <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Doctor's Registration Number</th>
+          </tr>
+      </thead>
+      <tbody></tbody>
     </table>
 </div>
 
-<script>
-    $(document).ready( function () {
-    $('#myTable').DataTable();
-} );
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Fetch data from the API
+            fetch('https://phplaravel-1160073-4043249.cloudwaysapps.com/api/getAllDoctors')
+                .then(response => response.json())
+                .then(data => {
+                    // Process the data and populate the table
+                    const tableBody = document.querySelector('tbody');
+    
+                    data.forEach(doctor => {
+                      const row = document.createElement('tr');
+
+                      // Extract the properties to display in the table
+                      const propertiesToDisplay = ['name', 'email', 'doctors_registration_number'];
+
+                      propertiesToDisplay.forEach(property => {
+                          const cell = document.createElement('td');
+                          if(property == "name"){
+                            cell.textContent = doctor['first_name'] + " " + doctor["last_name"];
+                          } else{
+                            cell.textContent = doctor[property];
+                          }
+                          row.appendChild(cell);
+                      });
+
+                      tableBody.appendChild(row);
+                    });
+                })
+                .catch(error => console.error('Error fetching data:', error));
+        });
     </script>
 </body>
 </html>
