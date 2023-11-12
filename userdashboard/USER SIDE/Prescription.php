@@ -7,7 +7,7 @@
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
+<!-- partial:index.partial.php -->
 <!-- MultiStep Form -->
 
 
@@ -25,7 +25,7 @@
     <h3 class="fs-subtitle">Please upload the prescription</h3>
     <input id="file" name="files" type="file" /><br/>
    
-      <a href="Appointment Form.html"><div>If you do not have a prescription but want to make an appointment, please click here.</div>
+      <a href="Appointment Form.php"><div>If you do not have a prescription but want to make an appointment, please click here.</div>
     </a>
     
     <input type="button" name="next" class="next action-button" value="Next" />
@@ -48,7 +48,7 @@
   </fieldset>
   <fieldset>
     <h2 class="fs-title">Do you want to get in touch with a doctor?</h2>
-    <a href="Appointment Form.html"><h3 class="fs-subtitle">Click Here</h3></a>
+    <a href="Appointment Form.php"><h3 class="fs-subtitle">Click Here</h3></a>
     <div class="prescription-field"></div>
     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
     <input type="submit" name="submit" class="submit action-button" value="Submit" />

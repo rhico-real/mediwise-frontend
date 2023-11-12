@@ -7,7 +7,7 @@
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
+<!-- partial:index.partial.php -->
 <link href='https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,400,100,300,600,700' rel='stylesheet' type='text/css'>
   
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">

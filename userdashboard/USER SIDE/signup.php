@@ -8,7 +8,7 @@
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
+<!-- partial:index.partial.php -->
 <div class="container mt-3">
   <form>
     <div class="row jumbotron box8">
@@ -124,7 +124,7 @@
       </div>
 
     
-      <a href="login.html">Already have an account?Login Now</a>
+      <a href="login.php">Already have an account?Login Now</a>
       <div class="col-sm-12 form-group mb-0">
        <button class="btn btn-primary float-right" id="submitButton">Continue</button>
       </div>
@@ -228,7 +228,7 @@
           // Handle the API response data here
           console.log(data);
 
-          // Redirect to login.html or perform other actions as needed
+          // Redirect to login.php or perform other actions as needed
           alert("Registration successful.");
       })
       .catch(error => {

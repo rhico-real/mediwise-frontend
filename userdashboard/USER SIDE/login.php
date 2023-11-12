@@ -7,7 +7,7 @@
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
+<!-- partial:index.partial.php -->
 <form method="get" action="javascript: void(0);" id="login-form" class="login-form" autocomplete="off" role="main">
   <h1 class="a11y-hidden">Login Form</h1>
   <div>
@@ -30,7 +30,7 @@
 
   <div class="email">
     <a href="#">Forgot password?</a> <br>
-    <a href="Signup.html">Don’t have an account? Register Now</a>
+    <a href="Signup.php">Don’t have an account? Register Now</a>
   </div>
   <figure aria-hidden="true">
     <div class="person-body"></div>
@@ -71,8 +71,13 @@
           // Handle the API response data here
           console.log(data);
 
-          // Redirect to login.html or perform other actions as needed
+          // Redirect to login.php or perform other actions as needed
           alert("Login Successful.");
+
+          // Convert the JSON object to a string and store it in local storage
+          localStorage.setItem('profile', JSON.stringify(data));
+
+          window.location.href = 'dashboard.php';
       })
       .catch(error => {
           // Handle errors here

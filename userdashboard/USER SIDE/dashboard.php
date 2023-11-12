@@ -29,7 +29,7 @@
                     <i class="uil uil-estate"></i>
                     <span class="link-name">Dashboard</span>
                 </a></li>
-                <li><a href="history.html">
+                <li><a href="history.php">
                     <i class="uil uil-file-search-alt"></i>
                     <span class="link-name">History</span>
                 </a></li>         
@@ -77,16 +77,16 @@
                         <span class="link-name">Settings</span>
                     </a>
                     <div class="dropdown-content">
-                        <a href="My Profile.html">My Profile</a>
-                        <a href="Terms.html">Terms & Conditions</a>
-                        <a href="Privacy.html">Privacy Policy</a>
+                        <a href="profile.php">My Profile</a>
+                        <a href="Terms.php">Terms & Conditions</a>
+                        <a href="Privacy.php">Privacy Policy</a>
                     </div>
                 </li>
             </ul>
             </ul>
             
             <ul class="logout-mode">
-                <li><a href="index.html">
+                <li><a href="index.php">
                     <i class="uil uil-signout"></i>
                     <span class="link-name">Logout</span>
                 </a></li>
@@ -126,18 +126,18 @@
                 <div class="boxes">
                     <div class="box box1">
                         <i class="uil uil-meeting-board"></i>
-                      <a href="Forums.html"><span class="text">Forums</span> </a>
+                      <a href="Forums.php"><span class="text">Forums</span> </a>
                       
 
                     </div>
                     <div class="box box2">
                         <i class="uil uil-user-md"></i>
-                      <a href="Doctor List.html"><span class="text">Doctors</span></a> 
+                      <a href="Doctor List.php"><span class="text">Doctors</span></a> 
 
                     </div>
                     <div class="box box3">
                         <i class="uil uil-medkit"></i>
-                        <a href="Prescription.html"><span class="text">Upload Prescription</span></a>
+                        <a href="Prescription.php"><span class="text">Upload Prescription</span></a>
 
                     </div>
                 </div>

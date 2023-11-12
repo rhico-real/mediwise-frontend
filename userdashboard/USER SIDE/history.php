@@ -14,7 +14,7 @@
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
+<!-- partial:index.partial.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>

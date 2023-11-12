@@ -7,7 +7,7 @@
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
+<!-- partial:index.partial.php -->
 <div class="sttngs">
     <h2>Edit Profile</h2>
 <div class="tabordion">

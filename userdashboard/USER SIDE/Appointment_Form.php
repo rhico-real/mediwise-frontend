@@ -7,7 +7,7 @@
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
+<!-- partial:index.partial.php -->
 <html lang="en">
 <head>
 <script type="text/javascript" src="https://github.com/rubyeffect/easy_fill/tree/master/lib/easy_fill-0.0.1.min.js"></script>
@@ -24,7 +24,7 @@
       <p>Make your appointments more easier</p>
 
     </div>
-    <form action="index.html" method="post">
+    <form action="index.php" method="post">
       <fieldset>
         <legend><span class="number">1</span>Your basic details</legend>
         <label for="name">Name:</label>

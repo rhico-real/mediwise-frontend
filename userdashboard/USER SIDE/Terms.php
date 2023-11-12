@@ -7,7 +7,7 @@
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
+<!-- partial:index.partial.php -->
 <main>
       <article class="terms-and-conditions">
         <h1>Terms and Conditions</h1>
